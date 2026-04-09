@@ -1,51 +1,176 @@
-index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUBG Market - By Zinu</title>
+    <title>ZINU TRUSTED MART - UC & Popularity</title>
     <style>
         body {
-            background: #0a0a0a;
-            color: #00ff41;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 40px;
             margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffeb3b, #ff9800, #f57c00, #ff5722);
+            color: #000;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+            min-height: 100vh;
         }
-        h1 {
-            font-size: 3em;
-            color: #ffcc00;
-            text-shadow: 0 0 15px #ffcc00;
+
+        .header {
+            padding: 40px 15px 20px;
         }
-        p {
-            font-size: 1.6em;
-            margin: 20px 0;
+
+        .welcome-container {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;           /* Blue tick ko bohot close kiya */
+            margin-bottom: 10px;
         }
-        .btn {
-            background: #ff0000;
-            color: white;
-            padding: 18px 50px;
-            font-size: 1.4em;
+
+        .welcome {
+            font-size: 3.05rem;
+            font-weight: bold;
+            color: #d32f2f;
+            text-shadow: 
+                0 0 20px #ffffff,
+                0 0 40px #ff0000,
+                0 0 70px #ff0000;
+            line-height: 1.05;
+        }
+
+        .trusted {
+            font-size: 1.52rem;
+            color: #000000;
+            margin: 12px 0 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 0 0 12px #ffffff;
+        }
+
+        .subtitle {
+            font-size: 1.58rem;
+            color: #000000;
+            margin-bottom: 25px;
+            font-weight: bold;
+            text-shadow: 0 0 10px #ffffff;
+        }
+
+        .center-image {
+            max-width: 98%;           /* Picture ko aur bada kiya */
+            height: auto;
+            border-radius: 18px;
+            margin: 25px auto 40px;
+            box-shadow: 0 0 55px rgba(255, 255, 255, 0.9),
+                        0 0 80px rgba(255, 152, 0, 0.7);
+            display: block;
+        }
+
+        .products {
+            font-size: 1.45rem;
+            color: #000000;
+            margin: 35px 0 45px;
+            line-height: 2.2;
+            font-weight: bold;
+            text-shadow: 0 0 12px #ffffff;
+        }
+
+        .shop-btn {
+            background: linear-gradient(#00ff6a, #00cc44);
+            color: #000;
             border: none;
-            border-radius: 8px;
+            padding: 21px 82px;
+            font-size: 1.78rem;
+            font-weight: bold;
+            border-radius: 50px;
+            margin: 40px auto;
             cursor: pointer;
-            margin: 20px;
+            display: inline-block;
+            box-shadow: 0 0 55px #00ff6a,
+                        0 0 20px #ffffff;
+            transition: all 0.4s ease;
         }
-        .btn:hover {
-            background: #00ff41;
-            color: black;
+
+        .shop-btn:hover {
+            transform: scale(1.12);
+            box-shadow: 0 0 80px #00ff6a;
+        }
+
+        .footer {
+            margin-top: 80px;
+            padding: 40px;
+            color: #000000;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-shadow: 0 0 10px #ffffff;
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 37px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.8);
+            z-index: 9999;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.18);
+            background: #128C7E;
         }
     </style>
 </head>
 <body>
-    <h1>🔥 WELCOME TO ONLINE PUBG MARKET 🔥</h1>
-    <p>UC • Skins • Accounts • Weapons • Royal Pass</p>
-    <p>Sab sabse sasta aur safe yahan milta hai Bro!</p>
-    
-    <button class="btn" onclick="alert('Market abhi under construction hai! Jaldi launch kar rahe hain 🔥')">Shop Now</button>
-    
-    <p style="margin-top: 50px; font-size: 1.2em;">Made with ❤️ by Zinu • zinuxaqua</p>
+
+    <div class="header">
+        <div class="welcome-container">
+            <h1 class="welcome">WELCOME TO ZINU TRUSTED MART</h1>
+            <!-- Real Blue Verified Tick (bohot close) -->
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="#1DA1F2" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5 12.5C22.5 10.92 21.625 9.55 20.352 8.9C20.506 8.465 20.583 7.995 20.583 7.5C20.583 5.29 18.873 3.5 16.665 3.5C16.195 3.5 15.745 3.585 15.33 3.75C14.71 2.415 13.29 1.5 11.665 1.5C10.04 1.5 8.62 2.415 8 3.75C7.585 3.585 7.135 3.5 6.665 3.5C4.457 3.5 2.747 5.29 2.747 7.5C2.747 7.995 2.824 8.465 2.978 8.9C1.705 9.55 0.83 10.92 0.83 12.5C0.83 14.08 1.705 15.45 2.978 16.1C2.824 16.535 2.747 17.005 2.747 17.5C2.747 19.71 4.457 21.5 6.665 21.5C7.135 21.5 7.585 21.415 8 21.25C8.62 22.585 10.04 23.5 11.665 23.5C13.29 23.5 14.71 22.585 15.33 21.25C15.745 21.415 16.195 21.5 16.665 21.5C18.873 21.5 20.583 19.71 20.583 17.5C20.583 17.005 20.506 16.535 20.352 16.1C21.625 15.45 22.5 14.08 22.5 12.5Z" />
+                <path d="M8.5 12.5L11 16L16.5 9" stroke="#000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+        </div>
+        
+        <p class="trusted">MOST TRUSTED SERVICE</p>
+        <p class="subtitle">Premium PUBG Items</p>
+
+        <!-- Picture (badi size) -->
+        <img src="https://files.oaiusercontent.com/file-VlN8vL8vL8vL8vL8vL8vL8vL?se=2026-04-10T20%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D3628800%2C%20immutable&rscd=attachment%3B%20filename%3D1000481274.jpg" 
+             alt="ZINU TRUSTED MART" 
+             class="center-image">
+    </div>
+
+    <div class="products">
+        UC • POPULARITY • WOW POPULARITY<br>
+        X-SUIT CARD • CAR CARD
+    </div>
+
+    <!-- Shop Now Button -->
+    <a href="https://wa.me/923152828602?text=Hello%20Zinu%20Bro%2C%20I%20want%20to%20buy%20UC%20%2F%20Popularity%20%2F%20X-Suit%20Card.%20Please%20tell%20me%20rates" 
+       target="_blank">
+        <button class="shop-btn">🛒 SHOP NOW</button>
+    </a>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/923152828602" class="whatsapp-float" target="_blank">
+        💬
+    </a>
+
+    <div class="footer">
+        OWNED BY ZINU
+    </div>
+
 </body>
 </html>
